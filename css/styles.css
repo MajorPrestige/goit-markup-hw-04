@@ -330,15 +330,13 @@ img {
 /* * FOOTER CONTENT * */
 
 .footer {
-   background-color: var(--second-theme-color);
    padding-top: 60px;
+   background-color: var(--second-theme-color);
    padding-bottom: 60px;
 }
 .footer .logo {
    padding: 0;
    margin-bottom: 20px;
-}
-.address {
 }
 .address-item + .address-item {
    margin-top: 9px;
