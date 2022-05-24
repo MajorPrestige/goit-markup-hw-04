@@ -244,10 +244,10 @@ img {
    display: flex;
 }
 .card {
-   padding-top: 30px;
-   padding-bottom: 30px;
    padding-left: auto;
    padding-right: auto;
+   padding-top: 30px;
+   padding-bottom: 16px;
 }
 .worker-title {
    margin-bottom: 50px;
@@ -255,7 +255,7 @@ img {
 .worker-card {
    flex-basis: 270px;
    border-radius: 4px;
-   
+   padding-bottom: 30px;
    background-color: var(--main-color);
    font-size: 16px;
    line-height: 1.19;
@@ -265,7 +265,6 @@ img {
 }
 .worker-name {
    margin-bottom: 10px;
-
    font-weight: 500;
    font-size: 16px;
    text-align: center;
@@ -275,7 +274,30 @@ img {
    font-weight: 400;
    color: var(--second-text-color);
 }
-
+.worker-social {
+   display: flex;
+   justify-content: center;
+}
+.worker-social-svg:not(:last-child) {
+   margin-right: 10px;
+}
+.worker-social-link {
+   display: flex;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+}
+.worker-social-link:hover .worker-social-icon {
+   fill: var(--main-color);
+}
+.worker-social-link:hover {
+   background-color: var(--accent-color);
+}
+.worker-social-icon {
+   fill: #AFB1B8;
+}
 /* * PROJECTS */
 .buttons-list {
    display: flex;
