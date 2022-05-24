@@ -92,6 +92,14 @@ img {
    display: flex;
    margin-left: auto;
 }
+.contact.link {
+   display: flex;
+   align-items: center;
+}
+.nav-svg {
+   margin-right: 10px;
+   fill: var(--second-text-color);
+}
 .header-flex {
    display: flex;
    align-items: center;
@@ -139,6 +147,12 @@ img {
 .contact:hover,
 .current {
    color: var(--accent-color);
+}
+.nav-link:hover .nav-svg,
+.nav-link:focus .nav-svg,
+.contact:focus .nav-svg,
+.contact:hover .nav-svg {
+   fill: currentColor;
 }
 
 /* * HERO SECTION */
@@ -293,10 +307,12 @@ img {
    align-items: center;
    justify-content: center;
 }
-.social-link:hover .social-icon {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
    fill: var(--main-color);
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
    background-color: var(--accent-color);
 }
 .social-icon {
@@ -404,8 +420,7 @@ img {
    display: flex;
 }
 .footer-social {
-   /* display: flex;
-   flex-direction: column; */
+   margin-left: 70px;
 }
 .action {
    display: block;
@@ -421,9 +436,7 @@ img {
 .footer-social .social-icon {
    fill: var(--main-color);
 }
-.footer-social .social-link:hover {
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
    background-color: var(--accent-color);
-}
-.footer-social {
-   margin-left: 70px;
 }
